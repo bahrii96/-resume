@@ -1,0 +1,19 @@
+.hero {
+  position: relative;
+}
+.hero__container {
+  display: flex;
+
+  position: absolute;
+  top: -200px;
+}
+.hero__box {
+  width: 800px;
+
+  text-align: center;
+
+  background-color: rgb(14, 187, 106);
+}
+.hero__img {
+  display: block;
+}
