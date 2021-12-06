@@ -1,0 +1,19 @@
+.skills__title {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.skills__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skills__list--input {
+  pointer-events: none;
+  //   width: 250px;
+}
+.skills__list--box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

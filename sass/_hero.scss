@@ -5,15 +5,19 @@
   display: flex;
 
   position: absolute;
-  top: -200px;
+  top: -175px;
 }
 .hero__box {
+  display: inline-block;
   width: 800px;
 
   text-align: center;
-
-  background-color: rgb(14, 187, 106);
+  // box-sizing: content-box;
+  background-color: rgba(11, 218, 81, 0.9);
+ 
+  
 }
+
 .hero__img {
   display: block;
 }

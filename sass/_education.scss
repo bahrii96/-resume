@@ -1,0 +1,112 @@
+.education__container {
+  position: relative;
+}
+.education__title {
+  padding-top: 300px;
+  padding-bottom: 50px;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    z-index: 1;
+    top: 598px;
+    // right: auto;
+    left: 350px;
+    content: "";
+    width: 355px;
+    height: 7px;
+    transform: rotate(-90deg);
+    // transform: translateY(45px);
+    animation: lights 5s infinite;
+    border-radius: 60px;
+
+    transform-origin: top;
+  }
+}
+.education__list {
+  display: flex;
+  //   justify-content: space-between;
+  flex-direction: column;
+}
+.education__list--item {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 60px;
+  max-width: 400px;
+  height: 100%;
+  background-color: rgba(11, 218, 81, 0.2);
+  box-shadow: 8px 10px 10px 0px rgba(11, 218, 81, 0.6);
+  &:nth-child(2) {
+    align-self: flex-end;
+
+    &::before {
+      position: absolute;
+      z-index: 1;
+      top: 583px;
+      left: 535px;
+      content: "";
+      width: 100px;
+      height: 5px;
+
+      animation: lights 5s infinite;
+      border-radius: 60px;
+
+      transform-origin: top;
+    }
+  }
+  &:nth-child(1)::before {
+    position: absolute;
+    z-index: 1;
+    top: 420px;
+    left: 415px;
+    content: "";
+    width: 120px;
+    height: 5px;
+
+    animation: lights 5s infinite;
+    border-radius: 60px;
+
+    transform-origin: top;
+  }
+  &:nth-child(3)::before {
+    position: absolute;
+    z-index: 1;
+    top: 770px;
+    left: 415px;
+    content: "";
+    width: 120px;
+    height: 5px;
+
+    animation: lights 5s infinite;
+    border-radius: 60px;
+
+    transform-origin: top;
+  }
+}
+
+@keyframes lights {
+  0% {
+    background-color: rgb(231, 97, 202);
+  }
+  20% {
+    background-color: rgb(97, 231, 119);
+  }
+  40% {
+    background-color: rgb(111, 97, 240);
+  }
+  60% {
+    background-color: rgb(231, 97, 97);
+  }
+  80% {
+    background-color: rgb(97, 231, 224);
+  }
+  100% {
+    background-color: rgb(231, 97, 202);
+  }
+}
+// input[type="range"] {
+// //   width: 300px;
+// }
+.my-class {
+  pointer-events: none;
+}
