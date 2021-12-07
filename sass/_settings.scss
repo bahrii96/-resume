@@ -1,0 +1,68 @@
+.settings {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(130px);
+  position: absolute;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  //   transform: ;
+  position: fixed;
+  transition: all 0.3s;
+}
+.settings-active {
+  transform: translateY(-50%) translateX(0px);
+}
+.btn-settings {
+  font-size: 0px;
+  background-image: url("./../../images/settings.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.01);
+  width: 45px;
+  height: 25px;
+  padding: 0px;
+  animation: circle-rotate 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  cursor: pointer;
+
+  //   background-color:nth($list: , $n: );
+}
+@keyframes circle-rotate {
+  from {
+    transform: rotate(360deg);
+  }
+}
+.settings__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.settings__btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 10px 5px;
+  border: none;
+}
+.blue {
+  background-color: #0000ff;
+}
+.maroon {
+  background-color: #800000;
+}
+.saddleBrown {
+  background-color: #8b4513;
+}
+.indigo {
+  background-color: #4b0082;
+}
+.purple {
+  background-color: #800080;
+}
+.DarkSlateGrey {
+  background-color: #2f4f4f;
+}

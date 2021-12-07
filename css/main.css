@@ -375,6 +375,106 @@ a {
   opacity: 1;
 }
 
+.settings {
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(130px);
+          transform: translateY(-50%) translateX(130px);
+  position: absolute;
+  width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.settings-active {
+  -webkit-transform: translateY(-50%) translateX(0px);
+          transform: translateY(-50%) translateX(0px);
+}
+
+.btn-settings {
+  font-size: 0px;
+  background-image: url("./../../images/settings.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.01);
+  width: 45px;
+  height: 25px;
+  padding: 0px;
+  -webkit-animation: circle-rotate 3s;
+          animation: circle-rotate 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  cursor: pointer;
+}
+
+@-webkit-keyframes circle-rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes circle-rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.settings__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.settings__btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 10px 5px;
+  border: none;
+}
+
+.blue {
+  background-color: #0000ff;
+}
+
+.maroon {
+  background-color: #800000;
+}
+
+.saddleBrown {
+  background-color: #8b4513;
+}
+
+.indigo {
+  background-color: #4b0082;
+}
+
+.purple {
+  background-color: #800080;
+}
+
+.DarkSlateGrey {
+  background-color: #2f4f4f;
+}
+
 .form {
   max-width: 500px;
   height: 500px;
